@@ -12,17 +12,17 @@ zh-CN:
         state: "省份"
         zipcode: "邮政编码"
       spree/calculator/tiered_flat_rate:
-        preferred_base_amount:
-        preferred_tiers:
+        preferred_base_amount: "基础折扣"
+        preferred_tiers: "折上折"
       spree/calculator/tiered_percent:
-        preferred_base_percent:
-        preferred_tiers:
+        preferred_base_percent: "基础折扣"
+        preferred_tiers: "折上折"
       spree/country:
-        iso: ISO
-        iso3: ISO3
-        iso_name: ISO名称
+        iso: "ISO"
+        iso3: "ISO3"
+        iso_name: "ISO名称"
         name: "名称"
-        numcode: ISO编号
+        numcode: "ISO编号"
       spree/credit_card:
         base:
         cc_type: "信用卡类型"
@@ -42,11 +42,11 @@ zh-CN:
       spree/order:
         checkout_complete: "完成结账"
         completed_at: "结账日期"
-        considered_risky:
+        considered_risky: "风险订单"
         coupon_code: "优惠券号码"
         created_at: "下单日期"
         email: "电子邮件"
-        ip_address: IP地址
+        ip_address: "IP地址"
         item_total: "小记"
         number: "订单号"
         payment_state: "支付状态"
@@ -105,25 +105,25 @@ zh-CN:
       spree/return_authorization:
         amount: "金额"
       spree/role:
-        name: ming cheng
+        name: "角色名"
       spree/state:
         abbr: "缩写"
         name: "名称"
       spree/state_change:
         state_changes: "状态变更"
-        state_from:
-        state_to:
+        state_from: "从"
+        state_to: "变更为"
         timestamp: "时间"
         type: "类型"
-        updated:
+        updated: "更新"
         user: "用户"
       spree/store:
-        mail_from_address:
-        meta_description:
-        meta_keywords:
-        name:
-        seo_title:
-        url:
+        mail_from_address: "邮件地址"
+        meta_description: "描述"
+        meta_keywords: "关键字"
+        name: "店铺名称"
+        seo_title: "SEO 标题"
+        url: "网址"
       spree/tax_category:
         description: "描述"
         name: "名称"
@@ -164,8 +164,8 @@ zh-CN:
         spree/calculator/tiered_percent:
           attributes:
             base:
-              keys_should_be_positive_number:
-              values_should_be_percent:
+              keys_should_be_positive_number: "基础折扣必须大于 0"
+              values_should_be_percent: "数值必须为百分比 (0-100)"
             preferred_tiers:
               should_be_hash:
         spree/classification:
@@ -175,8 +175,8 @@ zh-CN:
         spree/credit_card:
           attributes:
             base:
-              card_expired:
-              expiry_invalid:
+              card_expired: "信用卡已过期"
+              expiry_invalid: "过期时间无效"
         spree/line_item:
           attributes:
             currency:
@@ -184,7 +184,7 @@ zh-CN:
         spree/refund:
           attributes:
             amount:
-              greater_than_allowed:
+              greater_than_allowed: "超过允许数量"
         spree/reimbursement:
           attributes:
             base:
@@ -198,7 +198,7 @@ zh-CN:
         spree/store:
           attributes:
             base:
-              cannot_destroy_default_store:
+              cannot_destroy_default_store: "不能删除默认店铺"
     models:
       spree/address:
         one: "地址"
@@ -724,8 +724,8 @@ zh-CN:
       operators:
         gt: "大于"
         gte: "大于或等于"
-        lt:
-        lte:
+        lt: "小于"
+        lte: "小于或等于"
     items_cannot_be_shipped:
     items_in_rmas:
     items_reimbursed:
@@ -1278,25 +1278,25 @@ zh-CN:
     there_were_problems_with_the_following_fields: "以下字段存在错误"
     this_order_has_already_received_a_refund:
     thumbnail: "缩略图"
-    tiered_flat_rate:
-    tiered_percent:
-    tiers:
+    tiered_flat_rate: "累进折扣(金额)"
+    tiered_percent: "累进折扣(百分比)"
+    tiers: "累进折扣"
     time: "时间"
     to_add_variants_you_must_first_define: "要添加具体型号，您需要先定义"
     total: "总计"
     total_per_item:
     total_pre_tax_refund:
-    total_price:
-    total_sales:
+    total_price: "总价"
+    total_sales: "总销量"
     track_inventory:
     tracking: "追踪"
-    tracking_number:
-    tracking_url:
+    tracking_number: "追踪号码"
+    tracking_url: "追踪地址"
     tracking_url_placeholder: "比如，http://quickship.com/package?num=:tracking"
-    transaction_id:
-    transfer_from_location:
+    transaction_id: "交易号"
+    transfer_from_location: "发货地址"
     transfer_stock:
-    transfer_to_location:
+    transfer_to_location: "送货地址"
     tree: "树"
     type: "类型"
     type_to_search: "搜索类型"
